@@ -11,7 +11,7 @@ const ToDo = () => {
 
   const pushTodoToArr = e => {
     e.preventDefault();
-    setTodoList([...todoList, { text: todo }]);
+    setTodoList([...todoList, { id: Date.now(), text: todo }]);
     // console.log("setTodoList", todoList);
     e.target.reset();
   };
@@ -25,14 +25,20 @@ const ToDo = () => {
   //   console.log("set", setTodoList);
   // };
 
+  function removeItem(id) {
+     setTodoList(todoList.filter(y => {
+        return y.id !== id;
+     }))
+  }
+
   return (
     <form onSubmit={pushTodoToArr}>
       <input placeholder="Type please" onChange={handleTodo}></input>
       <ul>
-        {todoList.map((x, index) => (
-          <li key={index}>
+        {todoList.map((x) => (
+          <li key={x.id}>
             {x.text}
-            // <a onClick={() => erase(x.index)}>x</a>
+            <a href='#' onClick={() => removeItem(x.id)}>X</a>
           </li>
         ))}
       </ul>
