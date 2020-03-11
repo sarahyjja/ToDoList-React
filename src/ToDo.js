@@ -12,15 +12,16 @@ const ToDo = () => {
   function pushTodoToArr(e) {
     e.preventDefault();
     setTodoList([...todoList, { text: todo }]);
-    console.log("setTodoList", todoList);
+    // console.log("setTodoList", todoList);
+    e.target.reset();
   }
 
   return (
     <form onSubmit={pushTodoToArr}>
       <input placeholder="Type please" onChange={handleTodo}></input>
       <ul>
-        {todoList.map(x => (
-          <li>{x.text}</li>
+        {todoList.map((x, index)=> (
+          <li key={index}>{x.text}</li>
         ))}
       </ul>
     </form>
