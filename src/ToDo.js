@@ -9,17 +9,19 @@ const ToDo = () => {
     setTodo(e.target.value);
   };
 
-  function pushTodoToArr(e){
-    e.preventDefault()
-    console.log(todo)
+  function pushTodoToArr(e) {
+    e.preventDefault();
+    setTodoList([...todoList, { text: todo }]);
+    console.log("setTodoList", todoList);
   }
 
   return (
     <form onSubmit={pushTodoToArr}>
       <input placeholder="Type please" onChange={handleTodo}></input>
       <ul>
-        {/* <li>{[pushTodoToArr]}</li> */}
-        {/* <li>{todo}</li> */}
+        {todoList.map(x => (
+          <li>{x.text}</li>
+        ))}
       </ul>
     </form>
   );
