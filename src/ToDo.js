@@ -26,7 +26,7 @@ const ToDo = () => {
   return (
     <form onSubmit={pushTodoToArr}>
       <input placeholder="Type please" onChange={handleTodo}></input>
-      <ul>
+      <ul className="list">
         {todoList.map(x => (
           <li key={x.id}>
             {x.text}

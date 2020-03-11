@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,20 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.list{
+list-style-type: none;
+color:red;
+padding:0;
+display: flex;
+}
+
+.list a{
+  color:green;
+  text-decoration: none;
+  margin-left: auto;
+}
+a:hover{
+opacity: 0.5;
 }
