@@ -6,18 +6,20 @@ html{
 
 .App {
   background-color: cyan;
-  text-align: -webkit-center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 form{
   background-color: peachpuff;
-  display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
+  /* padding: 2em; */
 }
 
 form input{
-  width: 30%;
+
 }
 
 li {
@@ -29,9 +31,9 @@ li {
 
 form .list {
   background-color: pink;
+  width: 100%;
 
   padding: 0;
-  height: 30%;
   display: flex;
   flex-direction: column;
 }
