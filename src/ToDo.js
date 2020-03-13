@@ -24,6 +24,8 @@ const ToDo = () => {
   };
 
   return (
+    <div>
+        <h1>To Do List</h1>
     <form onSubmit={pushTodoToArr}>
       <input placeholder="Type please" onChange={handleTodo}></input>
       <ul className="list">
@@ -37,6 +39,7 @@ const ToDo = () => {
         ))}
       </ul>
     </form>
+    </div>
   );
 };
 export default ToDo;
