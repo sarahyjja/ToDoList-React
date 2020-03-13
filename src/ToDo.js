@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Trash from './Trash';
 
 const ToDo = () => {
   const [todo, setTodo] = useState("");
@@ -33,7 +34,7 @@ const ToDo = () => {
           <li key={x.id}>
             {x.text}
             <a href="#" onClick={() => removeItem(x.id)}>
-              X
+              <Trash className="Trash" />
             </a>
           </li>
         ))}

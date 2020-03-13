@@ -1,48 +1,42 @@
 html{
   padding: 0;
   margin: 0;
-  background-color: palegoldenrod;
+  background-image: linear-gradient(to right, rgb(57, 28, 82) , rgb(3, 238, 246));
 }
 
 .App {
-  background-color: cyan;
+  /* background-color: cyan; */
   display: flex;
   justify-content: center;
   text-align: center;
 }
 
-h1{
-  margin: 0;
-}
-
 form{
-  background-color: peachpuff;
   flex-direction: column;
-  margin: 1em;
+  width: 100%;
+  /* padding: 2em; */
 }
 
 form input{
-
+  font-size: 1.5em;
 }
 
 li {
-  background-color: red;
   display: inline-flex;
   overflow: hidden;
   text-align: left;
+  font-size: 1.5em;
+  color: white;
 }
 
 form .list {
-  background-color: pink;
   width: 100%;
-
   padding: 0;
   display: flex;
   flex-direction: column;
 }
 
 form .list a {
-  background-color: saddlebrown;
   margin-left: auto;
   padding-left: 1em;
 }
