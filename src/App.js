@@ -1,13 +1,15 @@
 import React from "react";
 import "./App.css";
-import ToDo from './ToDo'
+import ToDo from "./ToDo";
 
 function App() {
   return (
-  <div className="App">
-    <ToDo />
-  </div>
-  )
+    <div className="App">
+      <div className="Page">
+        <ToDo />
+      </div>
+    </div>
+  );
 }
 
 export default App;

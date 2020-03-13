@@ -37,17 +37,71 @@
   }
 } */
 
+/* * {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+} */
+
+.App {
+  background-color: palegoldenrod;
+  /* display: flex; */
+  /* flex-direction: column; */
+  text-align: center;
+  /* width: 100vw;
+  height: 100vh; */
+
+}
+
+form{
+  background-color: peachpuff;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+form .list {
+  background-color: pink;
+  display: flex;
+  justify-content: space-between;
+  /* text-align; */
+  /* align-items: stretch; */
+  align-self: auto;
+}
+
+form .list a {
+  background-color: saddlebrown;
+  margin-left: auto;
+}
+
+.Page{
+  background-color: grey;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  /* text-align: center; */
+}
+
 .list{
 list-style-type: none;
 color:red;
 padding:0;
 display: flex;
+flex-direction: column;
+/* justify-content: space-between; */
+}
+
+.list{
+  color: purple;
+  display: flex;
+  justify-content: space-between;
 }
 
 .list a{
   color:green;
-  text-decoration: none;
+  /* text-decoration: none;
   margin-left: auto;
+  text-align: center; */
 }
 a:hover{
 opacity: 0.5;
