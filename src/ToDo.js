@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Trash from './Trash';
+import trash from "./trash";
 
 const ToDo = () => {
   const [todo, setTodo] = useState("");
@@ -26,20 +26,20 @@ const ToDo = () => {
 
   return (
     <div>
-        <h1>To Do List</h1>
-    <form onSubmit={pushTodoToArr}>
-      <input placeholder="Type please" onChange={handleTodo}></input>
-      <ul className="list">
-        {todoList.map(x => (
-          <li key={x.id}>
-            {x.text}
-            <a href="#" onClick={() => removeItem(x.id)}>
-              <Trash className="Trash" />
-            </a>
-          </li>
-        ))}
-      </ul>
-    </form>
+      <h1>To Do List</h1>
+      <form onSubmit={pushTodoToArr}>
+        <input placeholder="Type please" onChange={handleTodo}></input>
+        <ul className="list">
+          {todoList.map(x => (
+            <li key={x.id}>
+              {x.text}
+              <a href="#" onClick={() => removeItem(x.id)}>
+                <svg className="svg"></svg>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </form>
     </div>
   );
 };

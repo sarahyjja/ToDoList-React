@@ -40,3 +40,10 @@ form .list a {
   margin-left: auto;
   padding-left: 1em;
 }
+
+.svg {
+  background-image: url('trash.svg');
+  background-repeat: no-repeat;
+  height: 1.5rem;
+  width: 1.5rem;
+}
