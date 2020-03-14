@@ -26,15 +26,15 @@ const ToDo = () => {
 
   return (
     <div>
-      <h1>To Do List</h1>
+      <h1 className="title">To Do List</h1>
       <form onSubmit={pushTodoToArr}>
-        <input placeholder="Type please" onChange={handleTodo}></input>
+        <input className='input' placeholder="Type please" onChange={handleTodo}></input>
         <ul className="list">
           {todoList.map(x => (
             <li key={x.id}>
               {x.text}
               <a href="#" onClick={() => removeItem(x.id)}>
-                <svg className="svg"></svg>
+                <svg className="trash"></svg>{" "}
               </a>
             </li>
           ))}
