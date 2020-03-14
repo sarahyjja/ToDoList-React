@@ -5,7 +5,6 @@ html{
   justify-content: center;
   background-color: #6C9C54;
   background-image: url('bananas.svg');
-
 }
 
 .App {
@@ -21,32 +20,36 @@ html{
 }
 
 .title{
-  font-family: 'Arvo', serif;
-  font-size: 2em;
+  font-family: 'Luckiest Guy', serif;
+  font-size: 2.5em;
+  margin-bottom: 2%;
+  margin-top: 20%;
   color: white;
 }
 
-/* form{
-  flex-direction: column;
-  width: 100%;
-  color: yellow;
-} */
-
 .input{
   font-family: 'Raleway', sans-serif;
-    font-size: 1.2em;
-    color: #6C9C54;
-    padding-left: 1em;
-    border: 2px solid blue;
-    border-radius: 3em;
-    height: 2rem;
+  font-size: 1.2em;
+  color: #6C9C54;
+  padding-left: 1em;
+  border: 4px solid #ffe266;
+  border-radius: 1em;
+  height: 2.1em;
 }
 
-/* form .input{
-  font-size: 1.5em;
-} */
+.form .list {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
 
-li {
+.list{
+  font-family: 'Raleway', sans-serif;
+  margin-top: 15%;
+}
+
+.items {
   display: inline-flex;
   overflow: hidden;
   text-align: left;
@@ -54,18 +57,7 @@ li {
   color: white;
 }
 
-.list{
-  font-family: 'Raleway', sans-serif;
-}
-
-form .list {
-  width: 100%;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-form .list a {
+.form .list a {
   margin-left: auto;
   padding-left: 1em;
   color: white;
@@ -74,7 +66,7 @@ form .list a {
 .trash {
   background-image: url('trash.svg');
   background-repeat: no-repeat;
-  height: 1.5rem;
+  height: 2.5rem;
   width: 1.5rem;
 }
 /* .done{
