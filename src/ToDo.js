@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import trash from "./trash";
 
 const ToDo = () => {
   const [todo, setTodo] = useState("");

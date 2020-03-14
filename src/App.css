@@ -4,7 +4,7 @@ html{
   /* background-image: linear-gradient(to right, rgb(57, 28, 82) , rgb(3, 238, 246)); */
   justify-content: center;
   background-color: #6C9C54;
-  background-image: url('bananas.svg');
+  background-image: url('./assets/bananas.svg');
 }
 
 .App {
@@ -64,13 +64,13 @@ html{
 }
 
 .trash {
-  background-image: url('trash.svg');
+  background-image: url('./assets/trash.svg');
   background-repeat: no-repeat;
   height: 2.5rem;
   width: 1.5rem;
 }
 /* .done{
-  background-image: url('check.svg');
+  background-image: url('./assets/check.svg');
   background-repeat: no-repeat;
   height: 10px;
   width: 10px;
